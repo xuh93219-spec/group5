@@ -179,7 +179,7 @@ window.TEAM_DATA = {
       intro: "视觉设计，海报设计，UI/VI设计",
       skills: ["视觉设计", "海报", "UI/VI", "3D建模", "摄影"],
       skill_category: "视觉",
-      contact: "",
+      contact: "微信yop708906",
       need_diplomat: false
     },
     {
@@ -287,7 +287,7 @@ window.TEAM_DATA = {
       intro: "文字梳理与内容判断力，简单直接高效率",
       skills: ["文字梳理", "内容判断"],
       skill_category: "文案",
-      contact: "",
+      contact: "微信18299109981",
       need_diplomat: false
     },
     {
@@ -306,6 +306,15 @@ window.TEAM_DATA = {
       skills: ["整理", "策划", "剪辑", "PPT", "文案"],
       skill_category: "策划",
       contact: "微信xxz062260",
+      need_diplomat: false
+    },
+    {
+      nickname: "大头",
+      symbol: "淡蓝色",
+      intro: "活动现场执行、新媒体内容产出、数据整理和复盘",
+      skills: ["文案", "策划", "剪辑", "海报设计", "数据管理"],
+      skill_category: "策划",
+      contact: "微信L00L00XXXX",
       need_diplomat: false
     }
   ],
