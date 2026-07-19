@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="高光圆桌会 · 第5组 · 对外亮相">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>高光圆桌会 · 第5组</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Chart.js 用于能力图谱 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- 滑动容器 -->
+  <main class="h5-container">
+
+    <!-- ============ P1 开场页 ============ -->
+    <section class="screen screen-cover" id="screen-1">
+      <div class="cover-bg" id="coverBg"></div>
+      <div class="cover-content">
+        <p class="cover-team-name" id="coverTeamName"></p>
+        <h1 class="cover-slogan" id="coverSlogan"></h1>
+        <p class="cover-slogan-sub" id="coverSloganSub"></p>
+        <div class="scroll-hint">
+          <span>向下滑动</span>
+          <svg width="16" height="16" viewBox="0 0 16 16">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ P2 我们是谁 ============ -->
+    <section class="screen screen-intro" id="screen-2">
+      <!-- "看见彼此"词云背景层 -->
+      <div class="wordcloud-bg" id="wordcloudBg"></div>
+      <div class="screen-inner screen-inner-intro">
+        <div class="section-label">ABOUT US</div>
+        <h2 class="section-title">我们是谁</h2>
+        <p class="one-liner" id="oneLiner"></p>
+        <div class="core-tags" id="coreTags"></div>
+        <div class="intro-detail">
+          <p>我们是一支能把点子一路变成成品的全链路小组。</p>
+          <p>策划力是我们的底色，创意不被替代是我们共同的坚持。</p>
+        </div>
+        <div class="wordcloud-caption" id="wordcloudCaption">背景词云 · 来自"看见彼此"的共同点、差异与组合优势 · 词频越高字号越大</div>
+      </div>
+    </section>
+
+    <!-- ============ P3 30人卡片 ============ -->
+    <section class="screen screen-members" id="screen-3">
+      <div class="screen-inner">
+        <div class="section-label">OUR TEAM</div>
+        <h2 class="section-title">我们有哪些人</h2>
+        <p class="section-sub">点击卡片，认识每一位</p>
+        <div class="members-grid" id="membersGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ P4 能力图谱 ============ -->
+    <section class="screen screen-skills" id="screen-4">
+      <div class="screen-inner">
+        <div class="section-label">CAPABILITIES</div>
+        <h2 class="section-title">我们的能力图谱</h2>
+        <p class="section-sub">点击柱子查看代表成员</p>
+        <div class="chart-container">
+          <canvas id="skillsChart"></canvas>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+      </div>
+    </section>
+
+    <!-- ============ P5 连接我们 ============ -->
+    <section class="screen screen-connect" id="screen-5">
+      <div class="screen-inner">
+        <div class="section-label">CONNECT</div>
+        <h2 class="section-title">怎么连接我们</h2>
+        <p class="invite-text" id="inviteText"></p>
+
+        <div class="connect-options" id="connectOptions"></div>
+
+        <div class="footer-note">
+          <p>高光圆桌会 · 第5组</p>
+          <p class="footer-sub">北辰青年线上实习 · 2026</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 成员详情 Modal ============ -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- 数据与逻辑（v6=词云避让卡片，避免浏览器缓存） -->
+  <script src="js/data.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
+</body>
+</html>
